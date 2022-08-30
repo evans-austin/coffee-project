@@ -37,7 +37,7 @@ function updateCoffees(e) {
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
-        } else if (coffee.name.contains(selectName)) {
+        } else if (coffee.name.includes(selectName)) {
             filteredCoffees.push(coffee)
         }
     });
