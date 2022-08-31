@@ -1,9 +1,9 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    let html = `<div class="coffee" id="${coffee.id}">`;
+    let html = `<div class="coffee my-2" id="${coffee.id}">`;
     html += '<h2>' + coffee.name + '</h2>';
-    html += '<p>' + coffee.roast + '</p>';
+    html += '<p class="ms-2 text-muted">' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
@@ -36,7 +36,7 @@ function updateCoffees(e) {
     let filteredCoffees = [];
 
     coffees.forEach(function (coffee) {
-        if (selectedRoast === "All") selectedRoast = 'Light, Medium, Dark';
+        if (selectedRoast === "default") selectedRoast = 'Light, Medium, Dark';
 
         if (!!selectedName) {
             if (selectedRoast.includes(coffee.roast) && coffee.name.toLowerCase().includes(selectedName.toLowerCase()))
