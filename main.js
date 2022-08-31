@@ -58,7 +58,8 @@ function clearCoffees(e) {
 
 function addCoffee(e) {
     e.preventDefault();
-    console.log(e);
+    coffees.push({id: coffees.length+1, name: `${nameCreate.value}`, roast: `${roastCreate.value}`});
+    tbody.innerHTML = renderCoffees(coffees);
 }
 
 
