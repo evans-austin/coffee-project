@@ -77,4 +77,6 @@ function updateCoffees(e) {
     tbody.innerHTML = renderCoffees(coffees);
     datalistOptions.innerHTML = renderDatalistOpt(coffees);
 
-    submitButton.addEventListener('click', updateCoffees);
+    submitButton.addEventListener('submit', updateCoffees)
+    roastSelection.addEventListener('change', updateCoffees);
+    nameSelection.addEventListener('keyup', updateCoffees);
