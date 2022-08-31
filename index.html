@@ -40,7 +40,7 @@
         <!--        Stop Coffee List           -->
         <!--        Start Coffee Filters           -->
         <div class="column col-md">
-            <form>
+            <form class="mb-3 pb-5 border-bottom">
                 <div class="mb-3">
                     <label for="roast-selection" class="form-label">Roast</label>
                     <select class="form-select" aria-label="select roast" id="roast-selection">
@@ -50,7 +50,7 @@
                         <option>Dark</option>
                     </select>
                 </div>
-                <div class="mb-3">
+                <div class="mb-4">
                     <label for="name-selection" class="form-label">Coffee Name</label>
                     <input class="form-control" list="datalistOptions" id="name-selection"
                            placeholder="Type to search...">
@@ -58,11 +58,14 @@
                         <option value="">
                     </datalist>
                 </div>
-                <button id="clear" type="submit" class="btn btn-primary container-fluid">Clear</button>
+                <button id="clear" type="submit" class="btn btn-light container-fluid">Clear</button>
             </form>
             <!--        Stop Coffee Filters           -->
-            <!--Start add a Coffee-->
+            <!--Start Add a Coffee-->
             <form>
+                <div class="h3 text-center p-2">
+                    ADD A COFFEE
+                </div>
                 <div class="mb-3">
                     <label for="roast-selection" class="form-label">Roast</label>
                     <select class="form-select" aria-label="select roast" id="roast-create">
@@ -72,12 +75,12 @@
                         <option>Dark</option>
                     </select>
                 </div>
-                <div class="mb-3">
+                <div class="mb-4">
                     <label for="coffee-create" class="form-label">Coffee Name</label>
                     <input type="text" class="form-control" id="coffee-create"
                            placeholder="type coffee name">
                 </div>
-                <button id="submit" type="submit" class="btn btn-primary container-fluid">Add</button>
+                <button id="submit" type="submit" class="btn btn-light container-fluid">Add</button>
             </form>
             <!--end add a coffee-->
         </div>
