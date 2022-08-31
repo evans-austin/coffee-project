@@ -75,7 +75,7 @@ function clearCoffees(e) {
     ];
 
     let tbody = document.querySelector('#coffees');
-    let clearButton = document.querySelector('#submit');
+    let clearButton = document.querySelector('#clear');
     let roastSelection = document.querySelector('#roast-selection');
     let datalistOptions = document.querySelector('#datalistOptions');
     let nameSelection = document.querySelector('#name-selection');
