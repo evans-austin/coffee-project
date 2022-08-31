@@ -55,6 +55,16 @@ function clearCoffees(e) {
     nameSelection.value = "";
 }
 
+function addCoffee(e){
+    e.preventDefault();
+    let newRoast = roastSelection.value;
+    let newName = nameSelection.value;
+    let newCoffee = {
+        id:
+    };
+
+}
+
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
     let coffees = [
@@ -76,13 +86,17 @@ function clearCoffees(e) {
 
     let tbody = document.querySelector('#coffees');
     let clearButton = document.querySelector('#clear');
+    let addButton = document.querySelector('#submit');
     let roastSelection = document.querySelector('#roast-selection');
-    let datalistOptions = document.querySelector('#datalistOptions');
     let nameSelection = document.querySelector('#name-selection');
+    let nameCreate = document.querySelector('#name-create');
+    let roastCreate = document.querySelector('#roast-create');
+    let datalistOptions = document.querySelector('#datalistOptions');
 
     tbody.innerHTML = renderCoffees(coffees);
     datalistOptions.innerHTML = renderDatalistOpt(coffees);
 
     clearButton.addEventListener('submit', clearCoffees);
+    addButton.addEventListener('submit', addCoffee);
     roastSelection.addEventListener('change', updateCoffees);
     nameSelection.addEventListener('keyup', updateCoffees);
