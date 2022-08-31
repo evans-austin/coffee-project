@@ -59,8 +59,10 @@ function addCoffee(e){
     e.preventDefault();
     let newRoast = roastSelection.value;
     let newName = nameSelection.value;
+
     let newCoffee = {
-        id:
+        id: coffees.length+2,
+
     };
 
 }
