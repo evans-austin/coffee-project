@@ -67,8 +67,10 @@ let submitButton = document.querySelector('#submit');
 let roastSelection = document.querySelector('#roast-selection');
 let datalistOptions = document.querySelector('#datalistOptions');
 let nameSelection = document.querySelector('#name-selection');
+let selectName = document.querySelector('option')
 
 tbody.innerHTML = renderCoffees(coffees);
 datalistOptions.innerHTML = renderDatalistOpt(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
+selectName.addEventListener('click', updateCoffees)
