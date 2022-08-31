@@ -52,15 +52,35 @@
                 </div>
                 <div class="mb-3">
                     <label for="name-selection" class="form-label">Coffee Name</label>
-                    <input class="form-control" list="datalistOptions" id="name-selection" placeholder="Type to search...">
+                    <input class="form-control" list="datalistOptions" id="name-selection"
+                           placeholder="Type to search...">
                     <datalist id="datalistOptions">
                         <option value="">
                     </datalist>
                 </div>
+                <button id="clear" type="submit" class="btn btn-primary container-fluid">Clear</button>
+            </form>
+            <!--        Stop Coffee Filters           -->
+            <!--Start add a Coffee-->
+            <form>
+                <div class="mb-3">
+                    <label for="roast-selection" class="form-label">Roast</label>
+                    <select class="form-select" aria-label="select roast" id="roast-selection">
+                        <option value="Light, Medium, Dark" selected>All</option>
+                        <option>Light</option>
+                        <option>Medium</option>
+                        <option>Dark</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Cofee Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                           placeholder="type coffee name">
+                </div>
                 <button id="submit" type="submit" class="btn btn-primary container-fluid">Submit</button>
             </form>
+            <!--end add a coffee-->
         </div>
-        <!--        Stop Coffee Filters           -->
     </div>
 </div>
 
