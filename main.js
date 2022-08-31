@@ -17,6 +17,7 @@ function renderCoffees(coffees) {
     return htmlS;
 }
 
+
 function renderOpt(coffee) {
     return `<option value="${coffee.name}">`;
 }
