@@ -40,11 +40,11 @@
         <!--        Stop Coffee List           -->
         <!--        Start Coffee Filters           -->
         <div class="column col-md">
-            <form class="mb-3 pb-5 border-bottom">
+            <form id="filterCoffeeForm" class="mb-3 pb-5 border-bottom">
                 <div class="mb-3">
                     <label for="roast-selection" class="form-label">Roast</label>
                     <select class="form-select" aria-label="select roast" id="roast-selection">
-                        <option value="Light, Medium, Dark" selected>All</option>
+                        <option value="default" selected>All</option>
                         <option>Light</option>
                         <option>Medium</option>
                         <option>Dark</option>
@@ -62,14 +62,13 @@
             </form>
             <!--        Stop Coffee Filters           -->
             <!--Start Add a Coffee-->
-            <form>
+            <form id="addCoffeeForm">
                 <div class="h3 text-center p-2">
                     ADD A COFFEE
                 </div>
                 <div class="mb-3">
-                    <label for="roast-selection" class="form-label">Roast</label>
+                    <label for="roast-create" class="form-label">Roast</label>
                     <select class="form-select" aria-label="select roast" id="roast-create">
-                        <option value="Light, Medium, Dark" selected>All</option>
                         <option>Light</option>
                         <option>Medium</option>
                         <option>Dark</option>

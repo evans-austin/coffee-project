@@ -46,25 +46,19 @@ function updateCoffees(e) {
                 filteredCoffees.push(coffee);
         }
     });
-        tbody.innerHTML = renderCoffees(filteredCoffees);
+    tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
 function clearCoffees(e) {
     e.preventDefault();
-    roastSelection.value = "";
+    document.querySelector('#roast-selection').value = 'default';
     nameSelection.value = "";
+    tbody.innerHTML = renderCoffees(coffees);
 }
 
-function addCoffee(e){
+function addCoffee(e) {
     e.preventDefault();
-    let newRoast = roastSelection.value;
-    let newName = nameSelection.value;
-
-    let newCoffee = {
-        id: coffees.length+2,
-
-    };
-
+    console.log(e);
 }
 
 
@@ -87,8 +81,8 @@ function addCoffee(e){
     ];
 
     let tbody = document.querySelector('#coffees');
-    let clearButton = document.querySelector('#clear');
-    let addButton = document.querySelector('#submit');
+    let clearForm = document.querySelector('#filterCoffeeForm');
+    let createForm = document.querySelector('#addCoffeeForm');
     let roastSelection = document.querySelector('#roast-selection');
     let nameSelection = document.querySelector('#name-selection');
     let nameCreate = document.querySelector('#name-create');
@@ -98,7 +92,7 @@ function addCoffee(e){
     tbody.innerHTML = renderCoffees(coffees);
     datalistOptions.innerHTML = renderDatalistOpt(coffees);
 
-    clearButton.addEventListener('submit', clearCoffees);
-    addButton.addEventListener('submit', addCoffee);
+    clearForm.addEventListener('submit', clearCoffees);
+    createForm.addEventListener('submit', addCoffee);
     roastSelection.addEventListener('change', updateCoffees);
     nameSelection.addEventListener('keyup', updateCoffees);
